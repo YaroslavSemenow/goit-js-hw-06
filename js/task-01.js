@@ -1,9 +1,8 @@
-const listEl = document.querySelector("#categories");
-const arrCategoriesEl = listEl.children;
+const listEl = document.querySelectorAll(".item");
 
-console.log("Number of categories:", arrCategoriesEl.length);
+console.log("Number of categories:", listEl.length);
 
-[...arrCategoriesEl].map((el) => {
+listEl.forEach((el) => {
   console.log("Category:", el.querySelector("h2").textContent);
   console.log("Elements:", el.querySelectorAll("li").length);
 });

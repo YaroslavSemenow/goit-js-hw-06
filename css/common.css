@@ -39,3 +39,7 @@ button {
 .gallery__img {
   width: 240px;
 }
+
+#text {
+  transition: font-size 300ms;
+}
